@@ -24,7 +24,7 @@ import foundation from 'foundation-sites';
       
     },
     
-    init : function () {
+    init : () => {
       
       // Bootstrap Foundation
       $(document).foundation();
