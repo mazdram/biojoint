@@ -14,7 +14,7 @@ export default {
     src: 'src/styles/**/*.scss',
     dest: 'build/css',
     prodSourcemap: false,
-    sassIncludePaths: []
+    sassIncludePaths: ['node_modules/foundation-sites/scss']
   },
 
   scripts: {
