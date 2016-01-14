@@ -74,6 +74,7 @@
     "isparta": "^4.0.0",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.1.0",
+    "motion-ui": "^1.1.1",
     "pretty-hrtime": "^1.0.1",
     "run-sequence": "^0.3.6",
     "tiny-lr": "^0.2.1",
