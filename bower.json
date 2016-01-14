@@ -30,5 +30,6 @@
   "devDependencies": {
     "jquery": "~2.1.4",
     "fullpage.js": "~2.7.6",
+    "bourbon": "~4.2.6"
   }
 }

@@ -16,6 +16,8 @@ export default {
     prodSourcemap: false,
     sassIncludePaths: ['node_modules/foundation-sites/scss']
       'bower_components/fullpage.js',
+      'bower_components/bourbon/app/assets/stylesheets'
+    ]
   },
 
   scripts: {
