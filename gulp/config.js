@@ -15,6 +15,7 @@ export default {
     dest: 'build/css',
     prodSourcemap: false,
     sassIncludePaths: ['node_modules/foundation-sites/scss']
+      'bower_components/fullpage.js',
   },
 
   scripts: {

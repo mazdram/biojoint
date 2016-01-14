@@ -12,7 +12,12 @@ import jQuery from 'jquery';
 
 import foundation from 'foundation-sites';
 
-//
+// 
+// Vendor Libs
+// 
+
+import fullpage from 'fullpage.js';
+
 // Main Script
 //
 
