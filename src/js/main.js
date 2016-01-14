@@ -4,7 +4,7 @@
 // We always need jQuery
 // 
 
-import $          from 'jquery';
+import jQuery from 'jquery';
 
 //
 // Framework
