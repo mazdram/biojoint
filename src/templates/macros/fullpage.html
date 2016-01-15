@@ -12,3 +12,7 @@
 	</section>
 
 {% endmacro %}
+
+{% macro nav(anchor, value="") %}
+	<li data-menuanchor="{{ anchor }}"><a href="#{{ anchor }}">{{ value }}</a></li>
+{% endmacro %}

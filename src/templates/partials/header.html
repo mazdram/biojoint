@@ -4,12 +4,16 @@
 	</div>
 	<div class="navigation">
 		<ul id="page-menu" class="menu">
-			<li data-menuanchor="about"><a href="#about">About BioJoint</a></li>
-			<li data-menuanchor="stories"><a href="#stories">Patient Stories</a></li>
-			<li data-menuanchor="team"><a href="#team">BioJoint Team</a></li>
-			<li data-menuanchor="experience"><a href="#experience">MOI Experience</a></li>
-			<li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-			<li data-menuanchor="appointment"><a href="#appointment">Request an Appointment</a></li>
+			
+			{% import "macros/fullpage.html" as fp %}
+
+			{{ fp.nav('about', 'About BioJoint') }}
+			{{ fp.nav('stories', 'Patient Stories') }}
+			{{ fp.nav('team', 'BioJoint Team') }}
+			{{ fp.nav('experience', 'MOI Experience') }}
+			{{ fp.nav('contact', 'Contact') }}
+			{{ fp.nav('appointment', 'Request an Appointment') }}
+
 		</ul>
 	</div>
 </div>
