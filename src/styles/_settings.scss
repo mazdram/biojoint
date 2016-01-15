@@ -55,7 +55,7 @@ $alert-color: #ec5840;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #151515;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
@@ -68,6 +68,8 @@ $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
 
+$shade-color-dark: $black;
+$shade-color-light: $white;
 // 2. Breakpoints
 // --------------
 

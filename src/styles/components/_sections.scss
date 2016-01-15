@@ -1,0 +1,12 @@
+// Section default variables
+$section-bg-dark: 	$shade-color-dark !default;
+$section-bg-light: 	$shade-color-light !default;
+$section-bg-alpha: 	1 !default;
+
+section.section {
+	
+}
+
+// Shade coloring
+// body.dark-shade section.section { background-color: $section-bg-dark }
+// body.light-shade section.section { background-color: $section-bg-light }

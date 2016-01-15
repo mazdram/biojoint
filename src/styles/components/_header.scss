@@ -1,0 +1,21 @@
+// Default header variables
+$header-height:			rem-calc(50px) !default;
+$header-padding:		rem-calc(20px) !default;
+$header-alpha: 			0.85 !default;
+
+header {
+	@include position(fixed, -10% 0 null 0);
+	display: block;
+	min-height: $header-height;
+	padding: $header-padding;
+	background-color: hsla(0, 0, 0, $header-alpha);
+	opacity: 0;
+	@include transition(all $global-transition-speed $global-transition-timing);
+		
+	// Additional header styles
+	
+}
+
+// Background Shades
+// body.dark-shade header { background-color: rgba($header-bg-dark, $header-bg-alpha) }
+// body.light-shade header { background-color: rgba($header-bg-light, $header-bg-alpha) }
