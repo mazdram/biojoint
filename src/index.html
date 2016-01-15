@@ -1,78 +1,28 @@
-<!doctype html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width">
-		
-		<title>{{title}}</title>
-		<meta name="description" content="{{description}}">
-		<meta name="keywords" content="{{keywords}}">
-		
-		<!-- DNS Prefetch -->
-		<link href="//www.google-analytics.com" rel="dns-prefetch">
-    <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    
-    <!-- Icons -->
-    <link rel="shortcut icon" type="image/x-icon" href="">
-    <link rel="apple-touch-icon" href="">
-		
-		<!-- Styles -->
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-  	
-  	<header role="banner">
-    	{% include "partials/header.html" %}
-  	</header><!--/ header -->
-  	
-  	<main role="main">
-			<section id="biojoint-hero" class="section">
-				<div class="row">
-					
+{% extends "layout.html" %}
+  
+{% block content %}
+	
+	{% import "macros/fullpage.html" as fp %}
+	
+	<!-- BioJoint Hero, anchor: welcome, shade: dark -->
+	{{ fp.section('biojoint-hero', 'welcome', 'dark') }}
 
-				</div>
-			</section>
-			<section id="about" class="section">
-				<div class="row">
-					
-					
+	<!-- About BioJoint, anchor: about, shade: dark -->
+	{{ fp.section('about-biojoint', 'about', 'dark') }}
 
-				</div>
-			</section>
-			<section id="patient-stories" class="section">
-				<div class="row">
-					
-				</div>
-			</section>
-			<section id="biojoint-team" class="section">
-				<div class="row">
+	<!-- Patient Stories, anchor: stories, shade: dark -->
+	{{ fp.section('patient-stories', 'stories', 'dark') }}
 
-				</div>
-			</section>
-			<section id="moi-experience" class="section">
-				<div class="row">
-					
-				</div>
-			</section>
-			<section id="contact" class="section">
-				<div class="row">
-					
-				</div>
-			</section>
-			<section id="request-appointment" class="section">
-				<div class="row">
-					
-				</div>
-			</section>
+	<!-- BioJoint Team, anchor: team, shade: light -->
+	{{ fp.section('biojoint-team', 'team', 'light') }}
 
-  	</main><!--/ main -->
-  	
-  	<footer role="contentinfo">
-    	{% include "partials/footer.html" %}
-  	</footer><!--/ footer -->
-  	
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-	</body>
-</html>
+	<!-- MOI Experience, anchor: experience, shade: dark -->
+	{{ fp.section('moi-experience', 'experience', 'dark') }}
+
+	<!-- Contact Us, anchor: contact, shade: light -->
+	{{ fp.section('contact-us', 'contact', 'light') }}
+
+	<!-- Request an Appointment, anchor: appointment, shade: dark -->
+	{{ fp.section('request-appointment', 'appointment', 'dark') }}
+   
+{% endblock %}

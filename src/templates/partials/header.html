@@ -1,1 +1,19 @@
-<h1>{{title}}</h1>
+<div class="row">
+	<div class="branding">
+		
+	</div>
+	<div class="navigation">
+		<ul id="page-menu" class="menu">
+			
+			{% import "macros/fullpage.html" as fp %}
+
+			{{ fp.nav('about', 'About BioJoint') }}
+			{{ fp.nav('stories', 'Patient Stories') }}
+			{{ fp.nav('team', 'BioJoint Team') }}
+			{{ fp.nav('experience', 'MOI Experience') }}
+			{{ fp.nav('contact', 'Contact') }}
+			{{ fp.nav('appointment', 'Request an Appointment') }}
+
+		</ul>
+	</div>
+</div>
