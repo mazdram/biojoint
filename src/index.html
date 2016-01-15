@@ -1,42 +1,28 @@
-<!-- index.html -->
 {% extends "layout.html" %}
   
 {% block content %}
-    
-  <section id="biojoint-hero" data-anchor="welcome" data-shade="dark" class="section">
-		<div class="row">
-			Welcome
-		</div>
-	</section>
-	<section id="about-biojoint" data-anchor="about" data-shade="dark" class="section">
-		<div class="row">
-			About
-		</div>
-	</section>
-	<section id="patient-stories" data-anchor="stories" data-shade="dark" class="section">
-		<div class="row">
-			Stories
-		</div>
-	</section>
-	<section id="biojoint-team" data-anchor="team" data-shade="light" class="section">
-		<div class="row">
-			Team
-		</div>
-	</section>
-	<section id="moi-experience" data-anchor="experience" data-shade="dark" class="section">
-		<div class="row">
-			Experience
-		</div>
-	</section>
-	<section id="contact-us" data-anchor="contact" data-shade="light" class="section">
-		<div class="row">
-			Contact
-		</div>
-	</section>
-	<section id="request-appointment" data-anchor="appointment" data-shade="dark" class="section">
-		<div class="row">
-			Appointment
-		</div>
-	</section>
-    
+	
+	{% import "macros/fullpage.html" as fp %}
+	
+	<!-- BioJoint Hero, anchor: welcome, shade: dark -->
+	{{ fp.section('biojoint-hero', 'welcome', 'dark') }}
+
+	<!-- About BioJoint, anchor: about, shade: dark -->
+	{{ fp.section('about-biojoint', 'about', 'dark') }}
+
+	<!-- Patient Stories, anchor: stories, shade: dark -->
+	{{ fp.section('patient-stories', 'stories', 'dark') }}
+
+	<!-- BioJoint Team, anchor: team, shade: light -->
+	{{ fp.section('biojoint-team', 'team', 'light') }}
+
+	<!-- MOI Experience, anchor: experience, shade: dark -->
+	{{ fp.section('moi-experience', 'experience', 'dark') }}
+
+	<!-- Contact Us, anchor: contact, shade: light -->
+	{{ fp.section('contact-us', 'contact', 'light') }}
+
+	<!-- Request an Appointment, anchor: appointment, shade: dark -->
+	{{ fp.section('request-appointment', 'appointment', 'dark') }}
+   
 {% endblock %}
