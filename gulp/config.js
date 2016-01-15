@@ -14,7 +14,11 @@ export default {
     src: 'src/styles/**/*.scss',
     dest: 'build/css',
     prodSourcemap: false,
-    sassIncludePaths: ['node_modules/foundation-sites/scss']
+    sassIncludePaths: [
+      'node_modules/foundation-sites/scss',
+      'bower_components/fullpage.js',
+      'bower_components/bourbon/app/assets/stylesheets'
+    ]
   },
 
   scripts: {

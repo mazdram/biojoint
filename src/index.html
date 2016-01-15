@@ -1,8 +1,78 @@
-<!-- index.html -->
-{% extends "layout.html" %}
-  
-{% block content %}
+<!doctype html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		
+		<title>{{title}}</title>
+		<meta name="description" content="{{description}}">
+		<meta name="keywords" content="{{keywords}}">
+		
+		<!-- DNS Prefetch -->
+		<link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
     
-  <p>Hello World!</p>
-    
-{% endblock %}
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="apple-touch-icon" href="">
+		
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+  	
+  	<header role="banner">
+    	{% include "partials/header.html" %}
+  	</header><!--/ header -->
+  	
+  	<main role="main">
+			<section id="biojoint-hero" class="section">
+				<div class="row">
+					
+
+				</div>
+			</section>
+			<section id="about" class="section">
+				<div class="row">
+					
+					
+
+				</div>
+			</section>
+			<section id="patient-stories" class="section">
+				<div class="row">
+					
+				</div>
+			</section>
+			<section id="biojoint-team" class="section">
+				<div class="row">
+
+				</div>
+			</section>
+			<section id="moi-experience" class="section">
+				<div class="row">
+					
+				</div>
+			</section>
+			<section id="contact" class="section">
+				<div class="row">
+					
+				</div>
+			</section>
+			<section id="request-appointment" class="section">
+				<div class="row">
+					
+				</div>
+			</section>
+
+  	</main><!--/ main -->
+  	
+  	<footer role="contentinfo">
+    	{% include "partials/footer.html" %}
+  	</footer><!--/ footer -->
+  	
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+	</body>
+</html>

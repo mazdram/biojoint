@@ -1,4 +1,14 @@
+// Bourbon
+@import 'bourbon';
+
+// Foundation Framework
 @import 'settings', 'foundation';
 
+// Vendor libs
+@import 'jquery.fullPage.scss';
+
 // Site Components
+@import 'components/header';
+@import 'components/footer';
 @import 'components/navbar';
+@import 'components/sections';
