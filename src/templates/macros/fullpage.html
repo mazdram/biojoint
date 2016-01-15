@@ -1,0 +1,14 @@
+{% macro section(id, anchor, shade='dark') %}
+	
+	<section id="{{ id }}" data-anchor="{{ anchor }}" data-shade="{{ shade }}" class="section">
+		
+		<!-- Background Image -->
+		<div class="fullpage-background"></div>
+		
+		<!-- Content -->
+		<div class="row">
+			{% include "partials/section" + anchor|capitalize + ".html" ignore missing %}
+		</div>
+	</section>
+
+{% endmacro %}
