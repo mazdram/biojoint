@@ -70,6 +70,10 @@ $global-text-direction: ltr;
 
 $shade-color-dark: $black;
 $shade-color-light: $white;
+
+$global-transition-speed: .35;
+$global-transition-timing: $ease-in-out-cubic; // Requires Bourbon, otherwise 'ease'
+
 // 2. Breakpoints
 // --------------
 
